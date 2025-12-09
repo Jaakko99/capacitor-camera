@@ -6,6 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
+    "cap:android": "cross-env CAPACITOR_CONFIG_PATH=capacitor.config.local.ts npx cap open android",
     "test": "ng test"
   },
   "prettier": {
