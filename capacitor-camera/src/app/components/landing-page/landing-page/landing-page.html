@@ -1,0 +1,32 @@
+<div class="landing-page d-flex flex-column align-items-center justify-content-center vh-100 text-white">
+  <h1 class="mb-5">Capacitor AI Camera Tool</h1>
+
+  <div class="card text-dark mb-3" style="width: 18rem;">
+    <div class="card-body">
+      <p class="card-text">Take Picture</p>
+      <button class="btn btn-primary w-100" (click)="takePhoto()">Take Picture</button>
+    </div>
+  </div>
+
+  <div class="card text-dark mb-3" style="width: 18rem;">
+    <div class="card-body">
+      <p class="card-text">Save Picture</p>
+      <button class="btn btn-success w-100" (click)="savePhoto()" [disabled]="!photoData">Save Picture</button>
+    </div>
+  </div>
+
+  <div class="card text-dark" style="width: 18rem;">
+    <div class="card-body">
+      <p class="card-text">Detect & Change Color</p>
+      <button class="btn btn-warning w-100" (click)="detectAndChangeColor()" [disabled]="!photoData">
+        Detect & Change
+      </button>
+    </div>
+  </div>
+
+        
+  <div class="mt-4">
+    <h5>Preview:</h5>
+    <img [src]="photoData" alt="Photo preview" class="img-fluid border border-white" />
+  </div>
+</div>

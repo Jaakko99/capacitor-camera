@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+.landing-page {
+  background-color: black;
+  color: white;
+
+  .card {
+    background-color: white;
+    color: black;
+  }
+
+  button {
+    margin-top: 0.5rem;
+  }
+}

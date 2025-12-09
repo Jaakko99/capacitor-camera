@@ -6,8 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "serve:ssr:capacitor-camera": "node dist/capacitor-camera/server/server.mjs"
+    "test": "ng test"
   },
   "prettier": {
     "printWidth": 100,
@@ -31,10 +30,12 @@
     "@angular/platform-browser": "^21.0.0",
     "@angular/platform-server": "^21.0.0",
     "@angular/router": "^21.0.0",
-    "@angular/ssr": "^21.0.2",
     "@capacitor/android": "^8.0.0",
     "@capacitor/camera": "^8.0.0",
     "@capacitor/core": "^8.0.0",
+    "@ngxs/devtools-plugin": "20.1.0",
+    "@ngxs/store": "^20.1.0",
+    "bootstrap": "^5.3.8",
     "express": "^5.1.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0"
